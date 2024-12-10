@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "685990509855",
+    "project_id": "appfilmes-77341",
+    "storage_bucket": "appfilmes-77341.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:685990509855:android:492130c1ea2ee17f5bc42a",
+        "android_client_info": {
+          "package_name": "br.com.academiadoflutter.proj_filme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "685990509855-9oq30giqko96ktge8m2v8n1ceckon061.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbhPvoQyiLAwWQcueg-M2qf_CZ51RbM8E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "685990509855-9oq30giqko96ktge8m2v8n1ceckon061.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
