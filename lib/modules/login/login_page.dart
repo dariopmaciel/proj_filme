@@ -52,13 +52,13 @@ class LoginPage extends GetView<LoginController> {
                 ),
               ),
               SizedBox(height: Get.height * .5),
-              Obx(() {
-                return Text(
-                  // 'Este APP foi criado por Dario P Maciel',
-                  'Este APP foi criado ${controller.nome.value}',
-                  style: const TextStyle(color: Colors.white),
-                );
-              })
+              // Obx(() {//!AQUI
+              //   return Text(
+              //     // 'Este APP foi criado por Dario P Maciel',
+              //     'Este APP foi criado ${controller.nome.value}',
+              //     style: const TextStyle(color: Colors.white),
+              //   );
+              // })
             ],
           ),
         ],
