@@ -27,18 +27,15 @@ class SplashPage extends StatelessWidget {
             // Text('data'),
             // Text(FirebaseRemoteConfig.instance.getString('api_token')),
             Container(
-          width: Get.width,
-          height: Get.height,
-          decoration: const BoxDecoration(
-            image: DecorationImage(
-              image: AssetImage(
-                'assets/images/1x/background.png',
-              ),
-              fit: BoxFit.cover,
-            ),
-          ),
-          child: Image.asset('assets/images/1x/logo.png'),
-        ),
+                width: Get.width,
+                height: Get.height,
+                decoration: const BoxDecoration(
+                  image: DecorationImage(
+                    image: AssetImage('assets/images/1x/background.png'),
+                    fit: BoxFit.cover,
+                  ),
+                ),
+                child: Image.asset('assets/images/1x/logo.png')),
       ),
     );
   }

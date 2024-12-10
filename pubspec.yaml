@@ -39,6 +39,9 @@ dependencies:
   firebase_core: ^3.8.1
   firebase_auth: ^5.3.4
   firebase_remote_config: ^5.2.0
+  flutter_signin_button: ^2.0.0
+  
+  
 
 dev_dependencies:
   flutter_test:
