@@ -1,10 +1,16 @@
 import 'package:get/get_navigation/src/routes/get_route.dart';
 import 'package:proj_filme/application/modules/module.dart';
+import 'package:proj_filme/modules/splash/splash_bindings.dart';
 import 'package:proj_filme/modules/splash/splash_page.dart';
 
 class SplashModule extends Module {
   @override
   List<GetPage> routers = [
-    GetPage(name: '/', page: () => const SplashPage()),
+    GetPage(
+      name: '/',
+      page: () => const SplashPage(),
+      //?Antes de executar pagina irá executar o bindings
+      binding: SplashBindings(),
+    ),
   ];
 }

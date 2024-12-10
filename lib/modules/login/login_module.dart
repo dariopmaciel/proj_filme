@@ -6,6 +6,6 @@ import 'package:proj_filme/modules/login/login_page.dart';
 class LoginModule implements Module {
   @override
   List<GetPage> routers = [
-    GetPage(name: '/page', page: () => const LoginPage()),
+    GetPage(name: '/login', page: () => const LoginPage()),
   ];
 }
