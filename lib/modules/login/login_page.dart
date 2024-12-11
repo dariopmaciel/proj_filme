@@ -48,10 +48,12 @@ class LoginPage extends GetView<LoginController> {
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(100),
                   ),
-                  onPressed: () => controller.login(), //!AQUI
+                  // onPressed: () => controller.login(), //!AQUI
+                  onPressed: ()async {
+                    controller.login();
+                  },
                 ),
               ),
-              // SizedBox(height: Get.height * .5),
               // Obx(() {//!AQUI
               //   return Text(
               //     // 'Este APP foi criado por Dario P Maciel',

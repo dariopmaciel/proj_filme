@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "685990509855-a3n3sqrd4qorjsgbv88j30fvan0h37fd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.academiadoflutter.proj_filme",
+            "certificate_hash": "9bf2b2b00d9bf62a9a2baa12b995fe40ff2bc729"
+          }
+        },
+        {
           "client_id": "685990509855-9oq30giqko96ktge8m2v8n1ceckon061.apps.googleusercontent.com",
           "client_type": 3
         }

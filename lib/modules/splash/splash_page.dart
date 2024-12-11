@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:proj_filme/modules/splash/splash_controller.dart';
 
 class SplashPage extends StatelessWidget {
   //Procura uma instância já registrada no GetX (gerenciamento de dependências).
