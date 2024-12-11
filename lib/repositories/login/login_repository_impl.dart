@@ -17,6 +17,6 @@ class LoginRepositoryImpl implements LoginRepository {
       );
       return FirebaseAuth.instance.signInWithCredential(credential);
     }
-    throw Exception('Erro ao realizar LOGIN');
+    throw Exception('Erro ao realizar LOGIN COM GOOGLE');
   }
 }

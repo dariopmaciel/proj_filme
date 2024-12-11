@@ -51,14 +51,14 @@ class LoginPage extends GetView<LoginController> {
                   onPressed: () => controller.login(), //!AQUI
                 ),
               ),
-              SizedBox(height: Get.height * .5),
-              Obx(() {//!AQUI
-                return Text(
-                  // 'Este APP foi criado por Dario P Maciel',
-                  'Este APP foi criado ${controller.nome.value}',
-                  style: const TextStyle(color: Colors.white),
-                );
-              })
+              // SizedBox(height: Get.height * .5),
+              // Obx(() {//!AQUI
+              //   return Text(
+              //     // 'Este APP foi criado por Dario P Maciel',
+              //     'Este APP foi criado ${controller.nome.value}',
+              //     style: const TextStyle(color: Colors.white),
+              //   );
+              // })
             ],
           ),
         ],
