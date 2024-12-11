@@ -9,12 +9,12 @@ class LoginController extends GetxController with LoaderMixin, MessagesMixin {
   // String nome = "Dario de Paula Maciel";
   var nome = "por: Dario de Paula Maciel".obs;
 
-  final LoginService _loginService;
+  // final LoginService _loginService;
   final loading = false.obs;
   final message = Rxn<MessageModel>();
 
-  LoginController({required LoginService loginService})
-      : _loginService = loginService;
+  // LoginController({required LoginService loginService})
+  //     : _loginService = loginService;
 
   @override
   void onInit() {
@@ -27,8 +27,7 @@ class LoginController extends GetxController with LoaderMixin, MessagesMixin {
     // nome.value = "na: Academia do Flutter";
     //
     // loading.value = true;
-    loading(true);
-    
+    loading(true);    
     // await Future.delayed(const Duration(seconds: 2));
     await 2.seconds.delay();
     // loading.value = false;
