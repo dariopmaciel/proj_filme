@@ -1,6 +1,8 @@
 import 'package:get/get.dart';
+
 import 'package:proj_filme/application/ui/loader/loader_mixin.dart';
 import 'package:proj_filme/application/ui/messages/messages_mixin.dart';
+import 'package:proj_filme/services/login/login_service.dart';
 
 // convceito de herança multipla de mixin
 class LoginController extends GetxController with LoaderMixin, MessagesMixin {
@@ -9,6 +11,10 @@ class LoginController extends GetxController with LoaderMixin, MessagesMixin {
 
   final loading = false.obs;
   final message = Rxn<MessageModel>();
+  final LoginService _loginService;
+
+  LoginController({required LoginService loginService})
+      : _loginService = loginService;
 
   @override
   void onInit() {
@@ -27,9 +33,11 @@ class LoginController extends GetxController with LoaderMixin, MessagesMixin {
     // loading.value = false;
     loading(false);
     // Get.snackbar('Teste', "TESTADO");
-    message(MessageModel.error(title: 'Titulo ERRO', message: 'Mensagem de ERRO'));
+    message(
+        MessageModel.error(title: 'Titulo ERRO', message: 'Mensagem de ERRO'));
     await 1.seconds.delay();
-    message(MessageModel.info(title: 'Titulo INFO', message: 'Mensagem de INFO'));
+    message(
+        MessageModel.info(title: 'Titulo INFO', message: 'Mensagem de INFO'));
     await 1.seconds.delay();
   }
 }
