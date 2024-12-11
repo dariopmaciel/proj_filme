@@ -48,10 +48,7 @@ class LoginPage extends GetView<LoginController> {
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(100),
                   ),
-                  // onPressed: () => controller.login(), //!AQUI
-                  onPressed: ()async {
-                    controller.login();
-                  },
+                  onPressed: () => controller.login(), //!AQUI
                 ),
               ),
               // Obx(() {//!AQUI

@@ -27,40 +27,41 @@ class LoginController extends GetxController with LoaderMixin, MessagesMixin {
     // nome.value = "na: Academia do Flutter";
     //
     // loading.value = true;
-    // loading(true);
-    // // await Future.delayed(const Duration(seconds: 2));
-    // await 2.seconds.delay();
-    // // loading.value = false;
-    // loading(false);
-    // // Get.snackbar('Teste', "TESTADO");
-    // message(
-    //     MessageModel.error(title: 'Titulo ERRO', message: 'Mensagem de ERRO'));
-    // await 1.seconds.delay();
-    // message(
-    //     MessageModel.info(title: 'Titulo INFO', message: 'Mensagem de INFO'));
-    // await 1.seconds.delay();
+    loading(true);
+    
+    // await Future.delayed(const Duration(seconds: 2));
+    await 2.seconds.delay();
+    // loading.value = false;
+    loading(false);
+    // Get.snackbar('Teste', "TESTADO");
+    message(
+        MessageModel.error(title: 'Titulo ERRO', message: 'Mensagem de ERRO'));
+    await 1.seconds.delay();
+    message(
+        MessageModel.info(title: 'Titulo INFO', message: 'Mensagem de INFO'));
+    await 1.seconds.delay();
 
-    try {
-      loading(true);
-      await 2.seconds.delay();
-      await _loginService.login();
-      loading(false);
-      message(
-        MessageModel.info(
-          title: 'Login SUCESSO',
-          message: 'Sucesso ao realizar login',
-        ),
-      );
-    } catch (e, s) {
-      print('ERROR ====> $e');
-      print('STACKTRACE ====> $s');
-      loading(false);
-      message(
-        MessageModel.error(
-          title: 'ERRO',
-          message: 'ERRO AO REALIZAR LOGIN',
-        ),
-      );
-    }
+    // try {
+    //   loading(true);
+    //   await 2.seconds.delay();
+        // await _loginService.login();
+    //   loading(false);
+    //   message(
+    //     MessageModel.info(
+    //       title: 'Login SUCESSO',
+    //       message: 'Sucesso ao realizar login',
+    //     ),
+    //   );
+    // } catch (e, s) {
+    //   print('ERROR ====> $e');
+    //   print('STACKTRACE ====> $s');
+    //   loading(false);
+    //   message(
+    //     MessageModel.error(
+    //       title: 'ERRO',
+    //       message: 'ERRO AO REALIZAR LOGIN',
+    //     ),
+    //   );
+    // }
   }
 }
