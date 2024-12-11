@@ -8,10 +8,7 @@ class LoginServiceImpl implements LoginService {
 
   LoginServiceImpl({required LoginRepository loginRepository})
       : _loginRepository = loginRepository;
-      
+
   @override
-  Future<UserCredential> login() {
-    // TODO: implement login
-    throw UnimplementedError();
-  }
+  Future<UserCredential> login() => _loginRepository.login();
 }
