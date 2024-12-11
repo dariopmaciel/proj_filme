@@ -1,11 +1,35 @@
 import 'package:get/get.dart';
+import 'package:proj_filme/application/ui/loader/loader_mixin.dart';
+import 'package:proj_filme/application/ui/messages/messages_mixin.dart';
 
-class LoginController extends GetxController {
+// convceito de herança multipla de mixin
+class LoginController extends GetxController with LoaderMixin, MessagesMixin {
+  // String nome = "Dario de Paula Maciel";
+  var nome = "por: Dario de Paula Maciel".obs;
 
-// String nome = "Dario de Paula Maciel";
-  // var nome = "por: Dario de Paula Maciel".obs;
+  final loading = false.obs;
+  final message = Rxn<MessageModel>();
 
-  void login() {
-    // nome.value = 'na: Academia do Flutter';
+  @override
+  void onInit() {
+    loaderListener(loading);
+    messageListener(message);
+    super.onInit();
+  }
+
+  Future<void> login() async {
+    nome.value = "na: Academia do Flutter";
+    //
+    // loading.value = true;
+    loading(true);
+    // await Future.delayed(const Duration(seconds: 2));
+    await 2.seconds.delay();
+    // loading.value = false;
+    loading(false);
+    // Get.snackbar('Teste', "TESTADO");
+    message(MessageModel.error(title: 'Titulo ERRO', message: 'Mensagem de ERRO'));
+    await 1.seconds.delay();
+    message(MessageModel.info(title: 'Titulo INFO', message: 'Mensagem de INFO'));
+    await 1.seconds.delay();
   }
 }
