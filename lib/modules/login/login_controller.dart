@@ -9,10 +9,14 @@ class LoginController extends GetxController with LoaderMixin, MessagesMixin {
   // String nome = "Dario de Paula Maciel";
   var nome = "por: Dario de Paula Maciel".obs;
 
+  //? HABILITAR MARCUS
   // final LoginService _loginService;
   final loading = false.obs;
   final message = Rxn<MessageModel>();
-
+  
+  
+  
+  //? HABILITAR MARCUS
   // LoginController({required LoginService loginService})
   //     : _loginService = loginService;
 
@@ -24,7 +28,7 @@ class LoginController extends GetxController with LoaderMixin, MessagesMixin {
   }
 
   Future<void> login() async {
-    //? ALTERNAR COM O DE BAIXO
+    //? ALTERNAR COM O DE BAIXO MARCUS
     // nome.value = "na: Academia do Flutter";
     //
     // loading.value = true;
@@ -43,7 +47,7 @@ class LoginController extends GetxController with LoaderMixin, MessagesMixin {
     //!-------------------------------------------
 
 
-//? ALTERNAR COM O DE CIMAA
+    //? ALTERNAR COM O DE CIMA MARCUS
     // try {
     //   loading(true);
     //   await _loginService.login();
