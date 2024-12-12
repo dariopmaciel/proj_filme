@@ -24,7 +24,7 @@ class LoginController extends GetxController with LoaderMixin, MessagesMixin {
   }
 
   Future<void> login() async {
-    //! NÃO DELETAR
+    //? ALTERNAR COM O DE BAIXO
     // nome.value = "na: Academia do Flutter";
     //
     // loading.value = true;
