@@ -42,6 +42,8 @@ class LoginController extends GetxController with LoaderMixin, MessagesMixin {
     await 1.seconds.delay();
     //!-------------------------------------------
 
+
+//? ALTERNAR COM O DE CIMAA
     // try {
     //   loading(true);
     //   await _loginService.login();
