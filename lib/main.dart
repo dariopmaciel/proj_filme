@@ -28,8 +28,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      initialBinding: ApplicationBindings(),
       title: 'Flutter Demo',
+      initialBinding: ApplicationBindings(),
       theme: ThemeData(
         primaryColor: Colors.blue,
         useMaterial3: false,
