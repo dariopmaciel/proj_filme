@@ -18,16 +18,16 @@ class LoginPage extends GetView<LoginController> {
       body: Stack(
         alignment: Alignment.topCenter,
         children: [
-          Container(
-            width: Get.width,
-            height: Get.height,
-            decoration: const BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage('assets/images/1x/background.png'),
-                fit: BoxFit.cover,
-              ),
-            ),
-          ),
+          // Container(
+          //   width: Get.width,
+          //   height: Get.height,
+          //   decoration: const BoxDecoration(
+          //     image: DecorationImage(
+          //       image: AssetImage('assets/images/1x/background.png'),
+          //       fit: BoxFit.cover,
+          //     ),
+          //   ),
+          // ),
           Container(
             color: Colors.black45,
             width: Get.width,
