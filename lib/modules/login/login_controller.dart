@@ -2,7 +2,7 @@ import 'package:get/get.dart';
 
 import 'package:proj_filme/application/ui/loader/loader_mixin.dart';
 import 'package:proj_filme/application/ui/messages/messages_mixin.dart';
-// import 'package:proj_filme/services/login/login_service.dart';
+import 'package:proj_filme/services/login/login_service.dart';
 
 // convceito de herança multipla de mixin
 class LoginController extends GetxController with LoaderMixin, MessagesMixin {
