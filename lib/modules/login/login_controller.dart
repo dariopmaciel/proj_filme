@@ -1,4 +1,3 @@
-import 'package:firebase_remote_config/firebase_remote_config.dart';
 import 'package:get/get.dart';
 
 import 'package:proj_filme/application/ui/loader/loader_mixin.dart';

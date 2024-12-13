@@ -1,5 +1,4 @@
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:get/get.dart';
 import 'package:proj_filme/repositories/login/login_repository.dart';
 
 import './login_service.dart';
