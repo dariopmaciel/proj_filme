@@ -1,23 +1,19 @@
+//?DESCOMENTAR ITENS MARCUS
 import 'package:firebase_auth/firebase_auth.dart';
-//?DESCOMENTAR ITENS MARCUS
-// import 'package:google_sign_in/google_sign_in.dart';
-
+import 'package:google_sign_in/google_sign_in.dart';
 import './login_repository.dart';
-//?DESCOMENTAR ITENS MARCUS
-// class LoginRepositoryImpl implements LoginRepository {
-  // @override
-  // Future<UserCredential> login() async {
-    // final googleUser = await GoogleSignIn().signIn();
-    // final googleAuth = await googleUser?.authentication;
 
-    // if (googleAuth != null) {
-      //ok
-      // final credential = GoogleAuthProvider.credential(
-        // accessToken: googleAuth.accessToken,
-        // idToken: googleAuth.idToken,
-      // );
-      // return FirebaseAuth.instance.signInWithCredential(credential);
-    // }
-    // throw Exception('Erro ao realizar LOGIN COM GOOGLE');
-  // }
-// }
+class LoginRepositoryImpl implements LoginRepository {
+  @override
+  Future<UserCredential> login() async {
+    final googleUser = await GoogleSignIn().signIn();
+    final googleAuth = await googleUser?.authentication;
+
+    if (googleAuth != null) {
+      final credential = GoogleAuthProvider.credential(
+          accessToken: googleAuth.accessToken, idToken: googleAuth.idToken);
+      return FirebaseAuth.instance.signInWithCredential(credential);
+    }
+    throw Exception('Erro ao realizar LOGIN COM GOOGLE');
+  }
+}

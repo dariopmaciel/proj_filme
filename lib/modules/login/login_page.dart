@@ -1,3 +1,4 @@
+import 'package:firebase_remote_config/firebase_remote_config.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_signin_button/button_list.dart';
 import 'package:flutter_signin_button/button_view.dart';
@@ -51,6 +52,8 @@ class LoginPage extends GetView<LoginController> {
                   onPressed: () => controller.login(), //!AQUI
                 ),
               ),
+              const Text('API TOKEN FUNCIONANDO:'),
+              Text(FirebaseRemoteConfig.instance.getString('api_token')),
               // Obx(() {//!AQUI
               //   return Text(
               //     // 'Este APP foi criado por Dario P Maciel',
